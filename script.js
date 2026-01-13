@@ -5,6 +5,100 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // ============================================
+    // STARFIELD BACKGROUND
+    // ============================================
+    function createStarfield() {
+        const container = document.createElement('div');
+        container.id = 'stars-container';
+        document.body.prepend(container);
+        
+        // Create stars
+        const starCount = 150;
+        for (let i = 0; i < starCount; i++) {
+            createStar(container);
+        }
+        
+        // Shooting stars every 5 seconds
+        setInterval(() => {
+            createShootingStar(container);
+        }, 5000);
+    }
+    
+    function createStar(container) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        
+        // Random size
+        const sizes = ['small', 'medium', 'large'];
+        const sizeClass = sizes[Math.floor(Math.random() * sizes.length)];
+        star.classList.add(sizeClass);
+        
+        // Random position
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+        
+        // Random twinkle duration
+        star.style.setProperty('--twinkle-duration', (2 + Math.random() * 4) + 's');
+        
+        // Random animation delay
+        star.style.animationDelay = Math.random() * 5 + 's';
+        
+        container.appendChild(star);
+        
+        // Slow drift movement
+        animateStar(star);
+    }
+    
+    function animateStar(star) {
+        const speed = 0.02 + Math.random() * 0.03;
+        let posX = parseFloat(star.style.left);
+        let posY = parseFloat(star.style.top);
+        const dirX = (Math.random() - 0.5) * speed;
+        const dirY = (Math.random() - 0.5) * speed;
+        
+        function move() {
+            posX += dirX;
+            posY += dirY;
+            
+            // Wrap around screen
+            if (posX > 100) posX = 0;
+            if (posX < 0) posX = 100;
+            if (posY > 100) posY = 0;
+            if (posY < 0) posY = 100;
+            
+            star.style.left = posX + '%';
+            star.style.top = posY + '%';
+            
+            requestAnimationFrame(move);
+        }
+        move();
+    }
+    
+    function createShootingStar(container) {
+        const star = document.createElement('div');
+        star.className = 'shooting-star';
+        
+        // Random start position (top-left area)
+        star.style.left = Math.random() * 50 + '%';
+        star.style.top = Math.random() * 40 + '%';
+        
+        container.appendChild(star);
+        
+        // Trigger animation after a tiny delay
+        requestAnimationFrame(() => {
+            star.classList.add('animate');
+        });
+        
+        // Remove after animation
+        setTimeout(() => {
+            star.remove();
+        }, 1000);
+    }
+    
+    // Initialize starfield
+    createStarfield();
+    
+    // ============================================
     // NAVBAR & ACTIVE LINK
     // ============================================
     const navLinks = document.querySelectorAll('.nav-link:not(.cta-btn)');
