@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Connect | Agence Web Créative</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">DC</span>
+                <span class="logo-text">DIGITAL<span class="accent">CONNECT</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Accueil</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#devis" class="nav-link cta-btn">Demander un devis</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="glitch-wrapper">
+                <h1 class="glitch">DIGITAL CONNECT</h1>
+            </div>
+            <p class="hero-subtitle">Créateurs de sites web qui claquent</p>
+            <p class="hero-description">On transforme vos idées en sites web percutants. Design audacieux, code solide, résultats concrets.</p>
+            <div class="hero-buttons">
+                <a href="#devis" class="btn btn-primary">
+                    <span class="btn-text">Demander un devis</span>
+                    <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#portfolio" class="btn btn-secondary">
+                    <span class="btn-text">Voir nos projets</span>
+                    <span class="btn-icon"><i class="fas fa-eye"></i></span>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// NOS SERVICES</span>
+                <h2 class="section-title">Solutions <span class="accent">Digitales</span></h2>
+                <p class="section-subtitle">Des technologies de pointe pour propulser votre business</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Développement Web</h3>
+                    <p>Sites vitrines, e-commerce, applications web sur mesure avec les dernières technologies.</p>
+                    <ul class="service-features">
+                        <li>React / Vue.js / Next.js</li>
+                        <li>Design Responsive</li>
+                        <li>Performance Optimisée</li>
+                    </ul>
+                    <div class="service-price">À partir de <span>499€</span></div>
+                </div>
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="featured-badge">POPULAIRE</div>
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Interfaces utilisateur intuitives et expériences mémorables qui convertissent.</p>
+                    <ul class="service-features">
+                        <li>Wireframes & Prototypes</li>
+                        <li>Design Systems</li>
+                        <li>Tests Utilisateurs</li>
+                    </ul>
+                    <div class="service-price"><span>Inclus</span> dans nos packs</div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Applications Mobile</h3>
+                    <p>Apps iOS et Android natives ou hybrides pour toucher vos clients partout.</p>
+                    <ul class="service-features">
+                        <li>React Native / Flutter</li>
+                        <li>Apps iOS & Android</li>
+                        <li>Push Notifications</li>
+                    </ul>
+                    <div class="service-price">À partir de <span>1990€</span></div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>SEO & Marketing</h3>
+                    <p>Stratégies de référencement et marketing digital pour maximiser votre visibilité.</p>
+                    <ul class="service-features">
+                        <li>Audit SEO Complet</li>
+                        <li>Content Marketing</li>
+                        <li>Analytics & Reporting</li>
+                    </ul>
+                    <div class="service-price">À partir de <span>199€</span>/mois</div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Hébergement & Cloud</h3>
+                    <p>Solutions d'hébergement sécurisées et évolutives pour vos projets.</p>
+                    <ul class="service-features">
+                        <li>Serveurs Haute Performance</li>
+                        <li>SSL & Sécurité</li>
+                        <li>Backup Automatique</li>
+                    </ul>
+                    <div class="service-price"><span>Inclus</span> 1 an dans nos packs</div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Intelligence Artificielle</h3>
+                    <p>Intégration d'IA et chatbots pour automatiser et optimiser vos processus.</p>
+                    <ul class="service-features">
+                        <li>Chatbots Intelligents</li>
+                        <li>Automatisation</li>
+                        <li>Machine Learning</li>
+                    </ul>
+                    <div class="service-price">Sur <span>devis</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// POURQUOI NOUS</span>
+                <h2 class="section-title">Pourquoi <span class="accent">Nous Choisir</span></h2>
+                <p class="section-subtitle">Des garanties concrètes pour votre tranquillité</p>
+            </div>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon">🎯</div>
+                    <h3>Satisfaction Garantie</h3>
+                    <p>Modifications illimitées jusqu'à votre satisfaction complète. Pas content ? On recommence.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">⚡</div>
+                    <h3>Délais Respectés</h3>
+                    <p>Livraison dans les temps ou réduction sur votre facture. On s'engage par écrit.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">🛡️</div>
+                    <h3>Support 6 Mois Inclus</h3>
+                    <p>Assistance technique gratuite pendant 6 mois après la livraison de votre projet.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">💳</div>
+                    <h3>Paiement Flexible</h3>
+                    <p>Payez en 3x sans frais. 30% à la commande, 40% à mi-parcours, 30% à la livraison.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// TARIFS</span>
+                <h2 class="section-title">Nos <span class="accent">Offres</span></h2>
+                <p class="section-subtitle">Des solutions adaptées à tous les budgets</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <span class="pricing-icon">🌟</span>
+                        <h3>Pack Starter</h3>
+                        <p>Idéal pour démarrer</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-new">499€</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Site vitrine 1-5 pages</li>
+                        <li><i class="fas fa-check"></i> Design responsive</li>
+                        <li><i class="fas fa-check"></i> Formulaire de contact</li>
+                        <li><i class="fas fa-check"></i> Hébergement 1 an inclus</li>
+                        <li><i class="fas fa-check"></i> Certificat SSL</li>
+                        <li class="disabled"><i class="fas fa-times"></i> SEO avancé</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Blog intégré</li>
+                    </ul>
+                    <a href="#devis" class="btn-primary pricing-btn">Choisir ce pack</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="card-badge">⭐ BEST-SELLER</div>
+                    <div class="pricing-header">
+                        <span class="pricing-icon">🚀</span>
+                        <h3>Pack Business</h3>
+                        <p>Le plus populaire</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-new">990€</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Site vitrine jusqu'à 10 pages</li>
+                        <li><i class="fas fa-check"></i> Design premium sur mesure</li>
+                        <li><i class="fas fa-check"></i> Formulaires avancés</li>
+                        <li><i class="fas fa-check"></i> Hébergement 1 an inclus</li>
+                        <li><i class="fas fa-check"></i> Optimisation SEO complète</li>
+                        <li><i class="fas fa-check"></i> Blog / Actualités</li>
+                        <li><i class="fas fa-check"></i> Formation administration</li>
+                    </ul>
+                    <a href="#devis" class="btn-primary pricing-btn">Choisir ce pack</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <span class="pricing-icon">💎</span>
+                        <h3>Pack Premium</h3>
+                        <p>Solution complète</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-new">1990€</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Site e-commerce complet</li>
+                        <li><i class="fas fa-check"></i> Design exclusif</li>
+                        <li><i class="fas fa-check"></i> Paiement en ligne sécurisé</li>
+                        <li><i class="fas fa-check"></i> Gestion stock & commandes</li>
+                        <li><i class="fas fa-check"></i> SEO + Google Ads setup</li>
+                        <li><i class="fas fa-check"></i> Formation complète</li>
+                        <li><i class="fas fa-check"></i> Support prioritaire 1 an</li>
+                    </ul>
+                    <a href="#devis" class="btn-primary pricing-btn">Choisir ce pack</a>
+                </div>
+            </div>
+            <div class="pricing-note">
+                <p>💡 <strong>Besoin d'un projet sur mesure ?</strong> <a href="#devis">Demandez un devis personnalisé</a> - C'est gratuit et sans engagement !</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// PORTFOLIO</span>
+                <h2 class="section-title">Nos <span class="accent">Réalisations</span></h2>
+                <p class="section-subtitle">Découvrez nos projets les plus innovants</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Sites Web</button>
+                <button class="filter-btn" data-filter="app">Applications</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #d4a574, #8b5a2b);">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Entremets & Saveurs</h4>
+                            <p>Site vitrine pâtisserie artisanale</p>
+                            <a href="https://www.entremets-et-saveurs.com/" target="_blank" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-tag">// À PROPOS</span>
+                    <h2 class="section-title">L'innovation au <span class="accent">cœur</span> de notre ADN</h2>
+                    <p>Depuis 2020, Digital Connect repousse les limites du digital. Notre équipe de passionnés combine créativité et expertise technique pour créer des expériences numériques uniques.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="150">0</span>
+                            <span class="stat-label">Projets Livrés</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="98">0</span>
+                            <span class="stat-label">Clients Satisfaits %</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="12">0</span>
+                            <span class="stat-label">Experts Créatifs</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="5">0</span>
+                            <span class="stat-label">Années d'Expérience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="tech-sphere">
+                        <div class="tech-orbit orbit-1">
+                            <div class="tech-icon"><i class="fab fa-react"></i></div>
+                        </div>
+                        <div class="tech-orbit orbit-2">
+                            <div class="tech-icon"><i class="fab fa-node-js"></i></div>
+                        </div>
+                        <div class="tech-orbit orbit-3">
+                            <div class="tech-icon"><i class="fab fa-python"></i></div>
+                        </div>
+                        <div class="tech-center">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Devis Section -->
+    <section id="devis" class="devis">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// DEVIS GRATUIT</span>
+                <h2 class="section-title">Lancez votre <span class="accent">Projet</span></h2>
+                <p class="section-subtitle">Décrivez-nous votre vision, nous la concrétisons</p>
+            </div>
+            <div class="devis-container">
+                <form id="devis-form" class="devis-form">
+                    <div class="form-progress">
+                        <div class="progress-step active" data-step="1">
+                            <span class="step-number">1</span>
+                            <span class="step-label">Projet</span>
+                        </div>
+                        <div class="progress-line"></div>
+                        <div class="progress-step" data-step="2">
+                            <span class="step-number">2</span>
+                            <span class="step-label">Détails</span>
+                        </div>
+                        <div class="progress-line"></div>
+                        <div class="progress-step" data-step="3">
+                            <span class="step-number">3</span>
+                            <span class="step-label">Contact</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 1: Type de projet -->
+                    <div class="form-step active" data-step="1">
+                        <h3 class="step-title">Quel type de projet ?</h3>
+                        <div class="project-types">
+                            <label class="project-type-card">
+                                <input type="radio" name="project-type" value="site-vitrine">
+                                <div class="card-content">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Site Vitrine</span>
+                                </div>
+                            </label>
+                            <label class="project-type-card">
+                                <input type="radio" name="project-type" value="e-commerce">
+                                <div class="card-content">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <span>E-Commerce</span>
+                                </div>
+                            </label>
+                            <label class="project-type-card">
+                                <input type="radio" name="project-type" value="application">
+                                <div class="card-content">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>Application</span>
+                                </div>
+                            </label>
+                            <label class="project-type-card">
+                                <input type="radio" name="project-type" value="refonte">
+                                <div class="card-content">
+                                    <i class="fas fa-sync-alt"></i>
+                                    <span>Refonte</span>
+                                </div>
+                            </label>
+                            <label class="project-type-card">
+                                <input type="radio" name="project-type" value="seo">
+                                <div class="card-content">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>SEO/Marketing</span>
+                                </div>
+                            </label>
+                            <label class="project-type-card">
+                                <input type="radio" name="project-type" value="autre">
+                                <div class="card-content">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                    <span>Autre</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Détails du projet -->
+                    <div class="form-step" data-step="2">
+                        <h3 class="step-title">Détails du projet</h3>
+                        <div class="form-group">
+                            <label for="budget">Budget estimé</label>
+                            <select id="budget" name="budget" required>
+                                <option value="">Sélectionnez une fourchette</option>
+                                <option value="< 1000€">Moins de 1 000€</option>
+                                <option value="1000-3000€">1 000€ - 3 000€</option>
+                                <option value="3000-5000€">3 000€ - 5 000€</option>
+                                <option value="5000-10000€">5 000€ - 10 000€</option>
+                                <option value="> 10000€">Plus de 10 000€</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="deadline">Délai souhaité</label>
+                            <select id="deadline" name="deadline" required>
+                                <option value="">Sélectionnez un délai</option>
+                                <option value="urgent">Urgent (< 2 semaines)</option>
+                                <option value="1-mois">1 mois</option>
+                                <option value="2-3-mois">2-3 mois</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description du projet</label>
+                            <textarea id="description" name="description" rows="4" placeholder="Décrivez votre projet, vos objectifs, vos inspirations..." required></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Informations de contact -->
+                    <div class="form-step" data-step="3">
+                        <h3 class="step-title">Vos coordonnées</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Entreprise</label>
+                                <input type="text" id="company" name="company" placeholder="Votre entreprise">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@exemple.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78">
+                            </div>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter">
+                                <span class="checkmark"></span>
+                                Recevoir nos actualités et conseils
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-navigation">
+                        <button type="button" class="btn btn-secondary btn-prev" style="display: none;">
+                            <i class="fas fa-arrow-left"></i> Précédent
+                        </button>
+                        <button type="button" class="btn btn-primary btn-next">
+                            Suivant <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button type="submit" class="btn btn-primary btn-submit" style="display: none;">
+                            <i class="fas fa-paper-plane"></i> Envoyer ma demande
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Success Message -->
+                <div class="form-success" style="display: none;">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Demande envoyée !</h3>
+                    <p>Merci pour votre confiance. Nous vous recontacterons sous 24h.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Restons <span class="accent">Connectés</span></h3>
+                    <p>Une question ? Un projet ? N'hésitez pas à nous contacter.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i>
+                            <span>🌐 100% Remote - Toute la France</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@digitalconnect11.com <small>(bientôt disponible)</small></span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>06 18 94 87 44</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61586426315166" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/digitalconnect.11/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-laptop-house"></i>
+                        <span>Nous travaillons 100% à distance</span>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">Disponibles partout en France 🇫🇷</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">DC</span>
+                    <span class="logo-text">DIGITAL<span class="accent">CONNECT</span></span>
+                </div>
+                <p class="footer-tagline">Sites web qui claquent, résultats qui parlent.</p>
+                <div class="footer-links">
+                    <a href="#home">Accueil</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#devis">Devis</a>
+                    <a href="#">Mentions légales</a>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Digital Connect. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/33618948744?text=Bonjour%20!%20Je%20suis%20intéressé%20par%20vos%20services%20web." class="whatsapp-float" target="_blank" title="Contactez-nous sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Une question ? 💬</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
